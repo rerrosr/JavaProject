@@ -11,7 +11,7 @@ ____
 
 ## Ссылка на API
 
-http://universities.hipolabs.com
+[API SRC](http://universities.hipolabs.com)
 ____
 
 ## Задание
@@ -25,3 +25,4 @@ ____
    ## Результаты SonarCloud
 
 По этой ссылке можно посмотреть результаты SonarCloud:
+https://sonarcloud.io/summary/new_code?id=rerrosr_JavaProject
