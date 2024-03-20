@@ -36,7 +36,6 @@ public class UniversityService {
     public University createUniversity(String universityName, Long countryId) {
         Country country = countryService.getCountryById(countryId);
         University university = new University(universityName, country);
-        // Дополнительная логика по созданию университета, если необходимо
         return universityRepository.save(university);
     }
     public List<University> getAllUniversities() {
