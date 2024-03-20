@@ -3,6 +3,7 @@ package com.example.univerproject.controller;
 import com.example.univerproject.model.University;
 import com.example.univerproject.service.UniversityService;
 import com.fasterxml.jackson.databind.JsonNode;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
