@@ -3,13 +3,11 @@ package com.example.univerproject.controller;
 import com.example.univerproject.model.University;
 import com.example.univerproject.service.UniversityService;
 import com.fasterxml.jackson.databind.JsonNode;
-import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-
 
 @RestController
 @RequestMapping("/api/v1/university")
@@ -59,9 +57,4 @@ public class UniversityController {
         return ResponseEntity.noContent().build();
     }
 
-    @GetMapping("/useful")
-    public ResponseEntity<List<University>> getUsefulUniversities(@RequestParam("country") String country) {
-        List<University> universities = universityService.getUsefulUniversities(country);
-        return ResponseEntity.ok(universities);
-    }
 }

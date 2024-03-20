@@ -16,7 +16,6 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class UniversityService {
-    private final CountryRepository countryRepository;
     private final UniversityRepository universityRepository;
     private final RestTemplate restTemplate;
     private final CountryService countryService;
@@ -30,13 +29,9 @@ public class UniversityService {
         ResponseEntity<JsonNode> response = restTemplate.getForEntity(url, JsonNode.class);
         return response.getBody();
     }
-
-
-
     public University createUniversity(String universityName, Long countryId) {
         Country country = countryService.getCountryById(countryId);
         University university = new University(universityName, country);
-        // Дополнительная логика по созданию университета, если необходимо
         return universityRepository.save(university);
     }
     public List<University> getAllUniversities() {
@@ -57,7 +52,4 @@ public class UniversityService {
         universityRepository.deleteById(id);
     }
 
-    public List<University> getUsefulUniversities(String country) {
-        return universityRepository.findUsefulUniversities(country);
-    }
 }
