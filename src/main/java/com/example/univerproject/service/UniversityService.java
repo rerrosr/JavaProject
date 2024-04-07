@@ -52,4 +52,11 @@ public class UniversityService {
         universityRepository.deleteById(id);
     }
 
+<<<<<<< HEAD
 }
+=======
+    public List<University> getUsefulUniversities(String country) {
+        return universityRepository.findUsefulUniversities(country);
+    }
+}
+>>>>>>> 2d6d35182bdd31b0afc2e475e0fed728221ee68d

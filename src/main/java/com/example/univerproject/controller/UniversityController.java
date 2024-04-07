@@ -57,4 +57,13 @@ public class UniversityController {
         return ResponseEntity.noContent().build();
     }
 
+<<<<<<< HEAD
 }
+=======
+    @GetMapping("/useful")
+    public ResponseEntity<List<University>> getUsefulUniversities(@RequestParam("country") String country) {
+        List<University> universities = universityService.getUsefulUniversities(country);
+        return ResponseEntity.ok(universities);
+    }
+}
+>>>>>>> 2d6d35182bdd31b0afc2e475e0fed728221ee68d
