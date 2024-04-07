@@ -3,67 +3,120 @@ package com.example.univerproject.controller;
 import com.example.univerproject.model.University;
 import com.example.univerproject.service.UniversityService;
 import com.fasterxml.jackson.databind.JsonNode;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Map;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+/** The type University controller. */
 @RestController
 @RequestMapping("/api/v1/university")
 public class UniversityController {
-    private final UniversityService universityService;
+  private final UniversityService universityService;
 
-    public UniversityController(UniversityService universityService) {
-        this.universityService = universityService;
-    }
+  /**
+   * Instantiates a new University controller.
+   *
+   * @param universityService the university service
+   */
+  public UniversityController(UniversityService universityService) {
+    this.universityService = universityService;
+  }
 
-    @GetMapping("/search")
-    public ResponseEntity<JsonNode> getUniversity(@RequestParam("country") String country) {
-        JsonNode response = universityService.getUniversity(country);
-        return ResponseEntity.ok(response);
-    }
+  /**
+   * Gets university.
+   *
+   * @param country the country
+   * @return the university
+   */
+  @GetMapping("/find")
+  public ResponseEntity<JsonNode> getUniversity(@RequestParam("country") String country) {
+    JsonNode response = universityService.getUniversity(country);
+    return ResponseEntity.ok(response);
+  }
 
-    @GetMapping
-    public ResponseEntity<List<University>> getAllUniversities() {
-        List<University> universities = universityService.getAllUniversities();
-        return ResponseEntity.ok(universities);
-    }
+  /**
+   * Gets all universities.
+   *
+   * @return the all universities
+   */
+  @GetMapping
+  public ResponseEntity<List<University>> getAllUniversities() {
+    List<University> universities = universityService.getAllUniversities();
+    return ResponseEntity.ok(universities);
+  }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<University> getUniversityById(@PathVariable Long id) {
-        University university = universityService.getUniversityById(id);
-        return ResponseEntity.ok(university);
-    }
+  /**
+   * Gets university by id.
+   *
+   * @param id the id
+   * @return the university by id
+   */
+  @GetMapping("/{id}")
+  public ResponseEntity<University> getUniversityById(@PathVariable Long id) {
+    University university = universityService.getUniversityById(id);
+    return ResponseEntity.ok(university);
+  }
 
-    @PostMapping
-    public ResponseEntity<University> createUniversity(@RequestBody Map<String, Object> requestBody) {
-        String universityName = (String) requestBody.get("name");
-        Long countryId = Long.parseLong(requestBody.get("countryId").toString());
+  /**
+   * Create university response entity.
+   *
+   * @param requestBody the request body
+   * @return the response entity
+   */
+  @PostMapping
+  public ResponseEntity<University> createUniversity(@RequestBody Map<String, Object> requestBody) {
+    String universityName = (String) requestBody.get("name");
+    Long countryId = Long.parseLong(requestBody.get("countryId").toString());
 
-        University createdUniversity = universityService.createUniversity(universityName, countryId);
-        return ResponseEntity.ok(createdUniversity);
-    }
+    University createdUniversity = universityService.createUniversity(universityName, countryId);
+    return ResponseEntity.ok(createdUniversity);
+  }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<University> updateUniversity(@PathVariable Long id, @RequestBody University updatedUniversity) {
-        University university = universityService.updateUniversity(id, updatedUniversity);
-        return ResponseEntity.ok(university);
-    }
+  /**
+   * Update university response entity.
+   *
+   * @param id the id
+   * @param updatedUniversity the updated university
+   * @return the response entity
+   */
+  @PutMapping("/{id}")
+  public ResponseEntity<University> updateUniversity(
+      @PathVariable Long id, @RequestBody University updatedUniversity) {
+    University university = universityService.updateUniversity(id, updatedUniversity);
+    return ResponseEntity.ok(university);
+  }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUniversity(@PathVariable Long id) {
-        universityService.deleteUniversity(id);
-        return ResponseEntity.noContent().build();
-    }
+  /**
+   * Delete university response entity.
+   *
+   * @param id the id
+   * @return the response entity
+   */
+  @DeleteMapping("/{id}")
+  public ResponseEntity<Void> deleteUniversity(@PathVariable Long id) {
+    universityService.deleteUniversity(id);
+    return ResponseEntity.noContent().build();
+  }
 
-<<<<<<< HEAD
+  /**
+   * Gets universities by country name.
+   *
+   * @param countryName the country name
+   * @return the universities by country name
+   */
+  @GetMapping("/search")
+  public ResponseEntity<List<University>> getUniversitiesByCountryName(
+      @RequestParam("country") String countryName) {
+    List<University> universities = universityService.getUniversitiesByCountryName(countryName);
+    return ResponseEntity.ok(universities);
+  }
 }
-=======
-    @GetMapping("/useful")
-    public ResponseEntity<List<University>> getUsefulUniversities(@RequestParam("country") String country) {
-        List<University> universities = universityService.getUsefulUniversities(country);
-        return ResponseEntity.ok(universities);
-    }
-}
->>>>>>> 2d6d35182bdd31b0afc2e475e0fed728221ee68d

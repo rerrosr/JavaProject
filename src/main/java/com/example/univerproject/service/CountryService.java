@@ -1,42 +1,90 @@
 package com.example.univerproject.service;
 
+import com.example.univerproject.cache.MyCache;
 import com.example.univerproject.model.Country;
 import com.example.univerproject.repositories.CountryRepository;
+import io.swagger.v3.oas.annotations.Hidden;
+import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
+/** The type Country service. */
 @Service
+@Hidden
 public class CountryService {
-    private final CountryRepository countryRepository;
+  private final CountryRepository countryRepository;
+  private final MyCache<Long, Country> cache = new MyCache<>(20);
 
-    public CountryService(CountryRepository countryRepository) {
-        this.countryRepository = countryRepository;
-    }
+  /**
+   * Instantiates a new Country service.
+   *
+   * @param countryRepository the country repository
+   */
+  public CountryService(CountryRepository countryRepository) {
+    this.countryRepository = countryRepository;
+  }
 
-    public List<Country> getAllCountries() {
-        return countryRepository.findAll();
-    }
+  /**
+   * Gets all countries.
+   *
+   * @return the all countries
+   */
+  public List<Country> getAllCountries() {
+    return countryRepository.findAll();
+  }
 
-    public Country getCountryById(Long id) {
-        return countryRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Country not found"));
+  /**
+   * Gets country by id.
+   *
+   * @param id the id
+   * @return the country by id
+   */
+  public Country getCountryById(Long id) {
+    Country country = cache.get(id);
+    if (country == null) {
+      country =
+          countryRepository
+              .findById(id)
+              .orElseThrow(() -> new RuntimeException("Country not found"));
+      if (country != null) {
+        cache.put(id, country);
+      }
     }
+    return country;
+  }
 
-    public Country createCountry(Country country) {
-        return countryRepository.save(country);
-    }
+  /**
+   * Create country country.
+   *
+   * @param country the country
+   * @return the country
+   */
+  public Country createCountry(Country country) {
+    return countryRepository.save(country);
+  }
 
-    public Country updateCountry(Long id, @NotNull Country updatedCountry) {
-        Country country = getCountryById(id);
-        country.setName(updatedCountry.getName());
-        country.setPopulation(updatedCountry.getPopulation());
-        country.setArea(updatedCountry.getArea());
-        return countryRepository.save(country);
-    }
+  /**
+   * Update country country.
+   *
+   * @param id the id
+   * @param updatedCountry the updated country
+   * @return the country
+   */
+  public Country updateCountry(Long id, @NotNull Country updatedCountry) {
+    Country country = getCountryById(id);
+    country.setName(updatedCountry.getName());
+    country.setPopulation(updatedCountry.getPopulation());
+    country.setArea(updatedCountry.getArea());
+    return countryRepository.save(country);
+  }
 
-    public void deleteCountry(Long id) {
-        countryRepository.deleteById(id);
-    }
+  /**
+   * Delete country.
+   *
+   * @param id the id
+   */
+  public void deleteCountry(Long id) {
+    countryRepository.deleteById(id);
+    cache.remove(id);
+  }
 }
