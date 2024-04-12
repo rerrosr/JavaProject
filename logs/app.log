@@ -1,423 +1,47 @@
-2024-04-12 20:18:12.011  INFO 5816 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 5816 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 20:18:12.019  INFO 5816 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 20:18:12.693  INFO 5816 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 20:18:12.743  INFO 5816 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
-2024-04-12 20:18:13.292  INFO 5816 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 20:18:13.300  INFO 5816 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 20:18:13.301  INFO 5816 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 20:18:13.340  INFO 5816 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 20:18:13.340  INFO 5816 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1288 ms
-2024-04-12 20:18:13.480  INFO 5816 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 20:18:13.528  INFO 5816 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 20:18:13.555  INFO 5816 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 20:18:13.727  INFO 5816 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 20:18:13.752  INFO 5816 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 20:18:14.014  INFO 5816 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37986daf
-2024-04-12 20:18:14.015  INFO 5816 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 20:18:14.043  WARN 5816 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 20:18:14.709  INFO 5816 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 20:18:14.792  INFO 5816 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:18:15.136  INFO 5816 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 20:18:15.657  WARN 5816 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 20:18:16.453  INFO 5816 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 20:18:16.468  INFO 5816 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.827 seconds (process running for 5.992)
-2024-04-12 20:19:12.932  INFO 5816 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 20:19:12.932  INFO 5816 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 20:19:12.933  INFO 5816 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 20:19:13.027 ERROR 5816 --- [nio-8080-exec-2] c.e.u.exceptions.ExceptionsHandler       : (400) Bad Request
+2024-04-13 00:15:32.440  INFO 15876 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 15876 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
+2024-04-13 00:15:32.449  INFO 15876 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-04-13 00:15:33.023  INFO 15876 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-13 00:15:33.058  INFO 15876 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2024-04-13 00:15:33.572  INFO 15876 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-13 00:15:33.582  INFO 15876 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-13 00:15:33.582  INFO 15876 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-13 00:15:33.622  INFO 15876 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-13 00:15:33.622  INFO 15876 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2024-04-13 00:15:33.758  INFO 15876 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-13 00:15:33.810  INFO 15876 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-13 00:15:33.842  INFO 15876 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-13 00:15:33.994  INFO 15876 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-13 00:15:34.014  INFO 15876 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-13 00:15:34.147  INFO 15876 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f240187
+2024-04-13 00:15:34.148  INFO 15876 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-13 00:15:34.178  WARN 15876 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-13 00:15:34.820  INFO 15876 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-13 00:15:34.903  INFO 15876 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-13 00:15:35.227  INFO 15876 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-13 00:15:35.672  WARN 15876 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-13 00:15:36.302  INFO 15876 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-13 00:15:36.308  INFO 15876 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.214 seconds (process running for 4.777)
+2024-04-13 00:18:10.031  INFO 15876 --- [nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-13 00:18:10.032  INFO 15876 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-13 00:18:10.033  INFO 15876 --- [nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-13 00:18:10.136  INFO 15876 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.createCountry
+2024-04-13 00:18:10.176 ERROR 15876 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.createCountry
 
-org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.example.univerproject.model.Country` from Array value (token `JsonToken.START_ARRAY`)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:184) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:159) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:134) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:228) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.example.univerproject.model.Country` from Array value (token `JsonToken.START_ARRAY`)
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1752) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1526) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1473) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:656) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:211) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.1.4.jar:6.1.4]
-	... 51 common frames omitted
-
-2024-04-12 20:20:33.345  INFO 5816 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 20:20:33.385 DEBUG 5816 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:20:33.413 DEBUG 5816 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:20:33.416  INFO 5816 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
-2024-04-12 20:23:53.628  INFO 5816 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:23:53.640  INFO 5816 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 20:23:53.644  INFO 5816 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 20:23:56.936  INFO 18156 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 18156 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 20:23:56.937  INFO 18156 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 20:23:57.482  INFO 18156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 20:23:57.520  INFO 18156 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
-2024-04-12 20:23:57.974  INFO 18156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 20:23:57.982  INFO 18156 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 20:23:57.982  INFO 18156 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 20:23:58.022  INFO 18156 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 20:23:58.023  INFO 18156 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1059 ms
-2024-04-12 20:23:58.146  INFO 18156 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 20:23:58.176  INFO 18156 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 20:23:58.204  INFO 18156 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 20:23:58.387  INFO 18156 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 20:23:58.409  INFO 18156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 20:23:58.556  INFO 18156 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40a8a26f
-2024-04-12 20:23:58.558  INFO 18156 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 20:23:58.583  WARN 18156 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 20:23:59.273  INFO 18156 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 20:23:59.348  INFO 18156 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:23:59.598  INFO 18156 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 20:24:00.058  WARN 18156 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 20:24:00.690  INFO 18156 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 20:24:00.697  INFO 18156 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.102 seconds (process running for 4.537)
-2024-04-12 20:24:06.351  INFO 18156 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 20:24:06.351  INFO 18156 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 20:24:06.352  INFO 18156 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 20:24:06.444  INFO 18156 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 20:24:06.477 DEBUG 18156 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:24:06.505 DEBUG 18156 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:24:06.506  INFO 18156 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
-2024-04-12 20:25:18.208 ERROR 18156 --- [nio-8080-exec-6] c.e.u.exceptions.ExceptionsHandler       : (500) Internal Server Error
-
-org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "{26}"
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:135) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:228) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: java.lang.NumberFormatException: For input string: "{26}"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
-	at java.base/java.lang.Long.parseLong(Long.java:709) ~[na:na]
-	at java.base/java.lang.Long.valueOf(Long.java:1157) ~[na:na]
-	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:206) ~[spring-core-6.1.4.jar:6.1.4]
-	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:439) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:412) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:161) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-6.1.4.jar:6.1.4]
-	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:860) ~[spring-context-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:285) ~[spring-web-6.1.4.jar:6.1.4]
-	... 48 common frames omitted
-
-2024-04-12 20:25:24.368  INFO 18156 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:25:24.400 DEBUG 18156 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 20:25:24.414 DEBUG 18156 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 20:25:24.424 DEBUG 18156 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 20:25:24.428  INFO 18156 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:25:40.072  INFO 18156 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:25:40.073 DEBUG 18156 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 20:25:40.077 DEBUG 18156 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 20:25:40.078 DEBUG 18156 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 20:25:40.079  INFO 18156 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:28:57.672  INFO 18156 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:28:57.674  INFO 18156 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 20:28:57.680  INFO 18156 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 20:28:59.250  INFO 15748 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 15748 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 20:28:59.251  INFO 15748 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 20:28:59.820  INFO 15748 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 20:28:59.852  INFO 15748 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
-2024-04-12 20:29:00.353  INFO 15748 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 20:29:00.361  INFO 15748 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 20:29:00.363  INFO 15748 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 20:29:00.405  INFO 15748 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 20:29:00.406  INFO 15748 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1115 ms
-2024-04-12 20:29:00.529  INFO 15748 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 20:29:00.577  INFO 15748 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 20:29:00.603  INFO 15748 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 20:29:00.736  INFO 15748 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 20:29:00.752  INFO 15748 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 20:29:00.910  INFO 15748 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@312f3050
-2024-04-12 20:29:00.911  INFO 15748 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 20:29:00.936  WARN 15748 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 20:29:01.559  INFO 15748 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 20:29:01.627  INFO 15748 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:29:01.919  INFO 15748 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 20:29:02.383  WARN 15748 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 20:29:03.010  INFO 15748 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 20:29:03.018  INFO 15748 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.071 seconds (process running for 4.608)
-2024-04-12 20:29:10.898  INFO 15748 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 20:29:10.899  INFO 15748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 20:29:10.900  INFO 15748 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 20:29:10.985  INFO 15748 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 20:29:11.023 DEBUG 15748 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:29:11.053 DEBUG 15748 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:29:11.054  INFO 15748 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
-2024-04-12 20:29:20.570  INFO 15748 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:29:20.598 DEBUG 15748 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 20:29:20.613 DEBUG 15748 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 20:29:20.623 DEBUG 15748 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 20:29:20.627  INFO 15748 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:29:21.807  INFO 15748 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:29:21.809 DEBUG 15748 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 20:29:21.810 DEBUG 15748 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 20:29:21.811 DEBUG 15748 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 20:29:21.812  INFO 15748 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:44:54.591  INFO 15748 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:44:54.592  INFO 15748 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 20:44:54.596  INFO 15748 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 20:44:58.295  INFO 13340 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 13340 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 20:44:58.296  INFO 13340 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 20:44:58.832  INFO 13340 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 20:44:58.867  INFO 13340 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
-2024-04-12 20:44:59.339  INFO 13340 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 20:44:59.348  INFO 13340 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 20:44:59.348  INFO 13340 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 20:44:59.387  INFO 13340 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 20:44:59.388  INFO 13340 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1064 ms
-2024-04-12 20:44:59.519  INFO 13340 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 20:44:59.552  INFO 13340 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 20:44:59.582  INFO 13340 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 20:44:59.769  INFO 13340 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 20:44:59.788  INFO 13340 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 20:44:59.902  INFO 13340 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@652b3733
-2024-04-12 20:44:59.903  INFO 13340 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 20:44:59.930  WARN 13340 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 20:45:00.602  INFO 13340 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 20:45:00.675  INFO 13340 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:45:00.970  INFO 13340 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 20:45:01.437  WARN 13340 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 20:45:02.061  INFO 13340 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 20:45:02.066  INFO 13340 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.05 seconds (process running for 4.488)
-2024-04-12 20:45:24.103  INFO 13340 --- [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 20:45:24.103  INFO 13340 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 20:45:24.104  INFO 13340 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 20:45:24.181  INFO 13340 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.createCountry
-2024-04-12 20:45:24.263 DEBUG 13340 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 20:45:24.275 ERROR 13340 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.createCountry
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:81) ~[classes/:na]
+org.springframework.dao.DataIntegrityViolationException: not-null property references a null or transient value : com.example.univerproject.model.Country.name
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:307) ~[spring-orm-6.1.4.jar:6.1.4]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.4.jar:6.1.4]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.1.4.jar:6.1.4]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220) ~[spring-aop-6.1.4.jar:6.1.4]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.save(Unknown Source) ~[na:na]
+	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:63) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
@@ -438,7 +62,7 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
 	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.createCountry(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.createCountry(CountryController.java:63) ~[classes/:na]
+	at com.example.univerproject.controller.CountryController.createCountry(CountryController.java:62) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
@@ -487,74 +111,74 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.univerproject.model.Country.name
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:109) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.internal.Nullability.checkNullability(Nullability.java:54) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.AbstractEntityInsertAction.nullifyTransientReferencesIfNotAlready(AbstractEntityInsertAction.java:124) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:69) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:754) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:738) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364) ~[spring-orm-6.1.4.jar:6.1.4]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.4.jar:6.1.4]
+	at jdk.proxy2/jdk.proxy2.$Proxy128.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.2.3.jar:3.2.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.3.jar:3.2.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.4.jar:6.1.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.4.jar:6.1.4]
+	... 77 common frames omitted
 
-2024-04-12 20:45:43.164  INFO 13340 --- [nio-8080-exec-2] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.createCountry
-2024-04-12 20:45:43.165 DEBUG 13340 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 20:45:43.190 DEBUG 13340 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 20:45:43.211  INFO 13340 --- [nio-8080-exec-2] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.createCountry
-2024-04-12 20:46:02.366  INFO 13340 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:46:02.385 DEBUG 13340 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 20:46:02.400 DEBUG 13340 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 20:46:02.407 DEBUG 13340 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 20:46:02.411  INFO 13340 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:46:20.029  INFO 13340 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 20:46:20.030 DEBUG 13340 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 20:46:20.031 ERROR 13340 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.performBulkCountryOperation
+2024-04-13 00:18:10.183 ERROR 15876 --- [nio-8080-exec-7] c.e.u.exceptions.ExceptionsHandler       : ERROR, 500 CODE
+2024-04-13 00:20:58.550 ERROR 15876 --- [nio-8080-exec-4] c.e.u.exceptions.ExceptionsHandler       : ERROR, 400 CODE
+2024-04-13 00:21:16.709  INFO 15876 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Entering service method: UniversityService.performBulkOperations
+2024-04-13 00:21:16.710 ERROR 15876 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Exception in service method: UniversityService.performBulkOperations
 
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:81) ~[classes/:na]
+java.lang.NullPointerException: Cannot invoke "com.example.univerproject.model.Country.getId()" because the return value of "com.example.univerproject.model.University.getCountry()" is null
+	at com.example.univerproject.service.UniversityService.lambda$performBulkOperations$1(UniversityService.java:119) ~[classes/:na]
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:115) ~[classes/:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[na:na]
+	at com.example.univerproject.service.UniversityService.performBulkOperations(UniversityService.java:120) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
@@ -574,8 +198,8 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
+	at com.example.univerproject.service.UniversityService$$SpringCGLIB$$0.performBulkOperations(<generated>) ~[classes/:na]
+	at com.example.univerproject.controller.UniversityController.performBulkOperations(UniversityController.java:125) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
@@ -625,18 +249,22 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2024-04-12 20:46:20.033 ERROR 13340 --- [nio-8080-exec-6] c.e.u.exceptions.ExceptionsHandler       : (500) Internal Server Error
+2024-04-13 00:21:16.712 ERROR 15876 --- [nio-8080-exec-6] c.e.u.exceptions.ExceptionsHandler       : ERROR, 500 CODE
+2024-04-13 00:21:58.697  INFO 15876 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Entering service method: UniversityService.performBulkOperations
+2024-04-13 00:21:58.698 ERROR 15876 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Exception in service method: UniversityService.performBulkOperations
 
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:81) ~[classes/:na]
+java.lang.NullPointerException: Cannot invoke "com.example.univerproject.model.Country.getId()" because the return value of "com.example.univerproject.model.University.getCountry()" is null
+	at com.example.univerproject.service.UniversityService.lambda$performBulkOperations$1(UniversityService.java:119) ~[classes/:na]
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:115) ~[classes/:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[na:na]
+	at com.example.univerproject.service.UniversityService.performBulkOperations(UniversityService.java:120) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
@@ -656,8 +284,8 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
+	at com.example.univerproject.service.UniversityService$$SpringCGLIB$$0.performBulkOperations(<generated>) ~[classes/:na]
+	at com.example.univerproject.controller.UniversityController.performBulkOperations(UniversityController.java:125) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
@@ -707,42 +335,25 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2024-04-12 20:46:55.020  INFO 13340 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 20:46:55.022 DEBUG 13340 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 20:46:55.024 DEBUG 13340 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2024-04-13 00:21:58.700 ERROR 15876 --- [nio-8080-exec-8] c.e.u.exceptions.ExceptionsHandler       : ERROR, 500 CODE
+2024-04-13 00:23:31.700  INFO 15876 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
+2024-04-13 00:23:31.709 DEBUG 15876 --- [io-8080-exec-10] org.hibernate.SQL                        : 
     insert 
     into
         country
         (area, name, population) 
     values
         (?, ?, ?)
-2024-04-12 20:46:55.028 DEBUG 13340 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 20:46:55.029 DEBUG 13340 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
+2024-04-13 00:23:31.735 DEBUG 15876 --- [io-8080-exec-10] org.hibernate.SQL                        : 
     insert 
     into
         country
         (area, name, population) 
     values
         (?, ?, ?)
-2024-04-12 20:46:55.031  INFO 13340 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
-2024-04-12 20:47:11.892  INFO 13340 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:47:11.893 DEBUG 13340 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2024-04-13 00:23:31.738  INFO 15876 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
+2024-04-13 00:24:07.060  INFO 15876 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
+2024-04-13 00:24:07.089 DEBUG 15876 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.area,
@@ -752,7 +363,7 @@ java.lang.IllegalArgumentException: Country with the same name already exists
         country c1_0 
     where
         c1_0.id=?
-2024-04-12 20:47:11.895 DEBUG 13340 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2024-04-13 00:24:07.102 DEBUG 15876 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         ul1_0.country_id,
         ul1_0.id,
@@ -761,15 +372,15 @@ java.lang.IllegalArgumentException: Country with the same name already exists
         university ul1_0 
     where
         ul1_0.country_id=?
-2024-04-12 20:47:11.896 DEBUG 13340 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
+2024-04-13 00:24:07.110 DEBUG 15876 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
     delete 
     from
         country 
     where
         id=?
-2024-04-12 20:47:11.897  INFO 13340 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:47:13.052  INFO 13340 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 20:47:13.054 DEBUG 13340 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2024-04-13 00:24:07.115  INFO 15876 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
+2024-04-13 00:24:09.988  INFO 15876 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
+2024-04-13 00:24:09.991 DEBUG 15876 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.area,
@@ -779,7 +390,7 @@ java.lang.IllegalArgumentException: Country with the same name already exists
         country c1_0 
     where
         c1_0.id=?
-2024-04-12 20:47:13.055 DEBUG 13340 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2024-04-13 00:24:09.995 DEBUG 15876 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     select
         ul1_0.country_id,
         ul1_0.id,
@@ -788,235 +399,28 @@ java.lang.IllegalArgumentException: Country with the same name already exists
         university ul1_0 
     where
         ul1_0.country_id=?
-2024-04-12 20:47:13.056 DEBUG 13340 --- [io-8080-exec-10] org.hibernate.SQL                        : 
+2024-04-13 00:24:09.996 DEBUG 15876 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
     delete 
     from
         country 
     where
         id=?
-2024-04-12 20:47:13.059  INFO 13340 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 20:49:34.873  INFO 13340 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:49:34.876  INFO 13340 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 20:49:34.880  INFO 13340 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 20:49:37.926  INFO 18124 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 18124 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 20:49:37.928  INFO 18124 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 20:49:38.493  INFO 18124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 20:49:38.527  INFO 18124 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
-2024-04-12 20:49:38.978  INFO 18124 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 20:49:38.986  INFO 18124 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 20:49:38.986  INFO 18124 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 20:49:39.020  INFO 18124 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 20:49:39.020  INFO 18124 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1058 ms
-2024-04-12 20:49:39.136  INFO 18124 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 20:49:39.164  INFO 18124 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 20:49:39.190  INFO 18124 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 20:49:39.328  INFO 18124 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 20:49:39.342  INFO 18124 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 20:49:39.445  INFO 18124 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5aa7cfdf
-2024-04-12 20:49:39.446  INFO 18124 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 20:49:39.467  WARN 18124 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 20:49:40.059  INFO 18124 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 20:49:40.135  INFO 18124 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 20:49:40.426  INFO 18124 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 20:49:40.845  WARN 18124 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 20:49:41.429  INFO 18124 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 20:49:41.436  INFO 18124 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 3.808 seconds (process running for 4.224)
-2024-04-12 21:37:50.336  INFO 18124 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 21:37:50.347  INFO 18124 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 21:37:50.351  INFO 18124 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 21:48:45.879  INFO 4744 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 4744 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 21:48:45.880  INFO 4744 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 21:48:46.479  INFO 4744 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 21:48:46.516  INFO 4744 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
-2024-04-12 21:48:47.058  INFO 4744 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 21:48:47.069  INFO 4744 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 21:48:47.069  INFO 4744 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 21:48:47.109  INFO 4744 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 21:48:47.109  INFO 4744 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1200 ms
-2024-04-12 21:48:47.265  INFO 4744 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 21:48:47.310  INFO 4744 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 21:48:47.331  INFO 4744 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 21:48:47.479  INFO 4744 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 21:48:47.501  INFO 4744 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 21:48:47.621  INFO 4744 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5aa7cfdf
-2024-04-12 21:48:47.623  INFO 4744 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 21:48:47.648  WARN 4744 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 21:48:48.412  INFO 4744 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 21:48:48.502  INFO 4744 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 21:48:48.862  INFO 4744 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 21:48:49.351  WARN 4744 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 21:48:50.035  INFO 4744 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 21:48:50.041  INFO 4744 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.477 seconds (process running for 4.907)
-2024-04-12 21:49:02.470  INFO 4744 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 21:49:02.470  INFO 4744 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 21:49:02.471  INFO 4744 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 21:49:02.495  INFO 4744 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:49:02.531 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:49:02.553 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:49:02.567 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:49:02.572  INFO 4744 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:49:28.230  INFO 4744 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.createCountry
-2024-04-12 21:49:28.281 DEBUG 4744 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:49:28.292 DEBUG 4744 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:49:28.304  INFO 4744 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.createCountry
-2024-04-12 21:49:39.983  INFO 4744 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.createCountry
-2024-04-12 21:49:39.985 DEBUG 4744 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:49:39.988 ERROR 4744 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.createCountry
+2024-04-13 00:24:09.997  INFO 15876 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
+2024-04-13 00:25:48.992  INFO 15876 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Entering service method: UniversityService.performBulkOperations
+2024-04-13 00:25:48.993 ERROR 15876 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Exception in service method: UniversityService.performBulkOperations
 
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.createCountry(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.createCountry(CountryController.java:63) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:50:18.873  INFO 4744 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 21:50:18.875 DEBUG 4744 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:50:18.878 DEBUG 4744 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:50:18.882 DEBUG 4744 --- [nio-8080-exec-6] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:50:18.883 ERROR 4744 --- [nio-8080-exec-6] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.performBulkCountryOperation
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
+java.lang.NullPointerException: Cannot invoke "com.example.univerproject.model.Country.getId()" because the return value of "com.example.univerproject.model.University.getCountry()" is null
+	at com.example.univerproject.service.UniversityService.lambda$performBulkOperations$1(UniversityService.java:119) ~[classes/:na]
 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[na:na]
+	at com.example.univerproject.service.UniversityService.performBulkOperations(UniversityService.java:120) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
@@ -1036,8 +440,8 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
+	at com.example.univerproject.service.UniversityService$$SpringCGLIB$$0.performBulkOperations(<generated>) ~[classes/:na]
+	at com.example.univerproject.controller.UniversityController.performBulkOperations(UniversityController.java:125) ~[classes/:na]
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
@@ -1087,803 +491,56 @@ java.lang.IllegalArgumentException: Country with the same name already exists
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
-2024-04-12 21:50:18.885 ERROR 4744 --- [nio-8080-exec-6] c.e.u.exceptions.ExceptionsHandler       : (500) Internal Server Error
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:50:31.839  INFO 4744 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 21:50:31.841 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:50:31.842 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:50:31.846 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:50:31.848 ERROR 4744 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.performBulkCountryOperation
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:50:31.849 ERROR 4744 --- [nio-8080-exec-9] c.e.u.exceptions.ExceptionsHandler       : (500) Internal Server Error
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:51:07.306  INFO 4744 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:51:07.307 DEBUG 4744 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:51:07.308 DEBUG 4744 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:51:07.309 DEBUG 4744 --- [nio-8080-exec-8] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:51:07.311  INFO 4744 --- [nio-8080-exec-8] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:51:11.751  INFO 4744 --- [nio-8080-exec-2] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:51:11.752 DEBUG 4744 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:51:11.754 DEBUG 4744 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:51:11.755 DEBUG 4744 --- [nio-8080-exec-2] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:51:11.757  INFO 4744 --- [nio-8080-exec-2] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:51:13.126  INFO 4744 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:51:13.127 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:51:13.129 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:51:13.130 DEBUG 4744 --- [nio-8080-exec-1] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:51:13.132  INFO 4744 --- [nio-8080-exec-1] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:51:22.757  INFO 4744 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:51:22.758 DEBUG 4744 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:51:22.760 DEBUG 4744 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:51:22.760 DEBUG 4744 --- [nio-8080-exec-5] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:51:22.763  INFO 4744 --- [nio-8080-exec-5] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:51:31.410  INFO 4744 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 21:51:31.413 DEBUG 4744 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:51:31.416 DEBUG 4744 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:51:31.420 DEBUG 4744 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:51:31.422 DEBUG 4744 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:51:31.423  INFO 4744 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
-2024-04-12 21:52:01.000  INFO 4744 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 21:52:01.002 DEBUG 4744 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:52:01.004 DEBUG 4744 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:52:01.007 DEBUG 4744 --- [nio-8080-exec-3] org.hibernate.SQL                        : 
-    select
-        c1_0.id 
-    from
-        country c1_0 
-    where
-        c1_0.name=? 
-    fetch
-        first ? rows only
-2024-04-12 21:52:01.009 ERROR 4744 --- [nio-8080-exec-3] c.e.univerproject.aop.LoggerAspect       : Exception in service method: CountryService.performBulkCountryOperation
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:52:01.010 ERROR 4744 --- [nio-8080-exec-3] c.e.u.exceptions.ExceptionsHandler       : (500) Internal Server Error
-
-java.lang.IllegalArgumentException: Country with the same name already exists
-	at com.example.univerproject.service.CountryService.createCountry(CountryService.java:74) ~[classes/:na]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
-	at com.example.univerproject.service.CountryService.performBulkCountryOperation(CountryService.java:108) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.aop.LoggerAspect.logServiceMethods(LoggerAspect.java:30) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.4.jar:6.1.4]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.4.jar:6.1.4]
-	at com.example.univerproject.service.CountryService$$SpringCGLIB$$0.performBulkCountryOperation(<generated>) ~[classes/:na]
-	at com.example.univerproject.controller.CountryController.performBulkCountryOperation(CountryController.java:98) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-
-2024-04-12 21:52:33.707  INFO 4744 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:52:33.708 DEBUG 4744 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:52:33.709 DEBUG 4744 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:52:33.709 DEBUG 4744 --- [nio-8080-exec-7] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:52:33.712  INFO 4744 --- [nio-8080-exec-7] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:52:34.900  INFO 4744 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:52:34.901 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:52:34.902 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:52:34.903 DEBUG 4744 --- [nio-8080-exec-9] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:52:34.905  INFO 4744 --- [nio-8080-exec-9] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:52:36.011  INFO 4744 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.deleteCountry
-2024-04-12 21:52:36.013 DEBUG 4744 --- [io-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.area,
-        c1_0.name,
-        c1_0.population 
-    from
-        country c1_0 
-    where
-        c1_0.id=?
-2024-04-12 21:52:36.014 DEBUG 4744 --- [io-8080-exec-10] org.hibernate.SQL                        : 
-    select
-        ul1_0.country_id,
-        ul1_0.id,
-        ul1_0.name 
-    from
-        university ul1_0 
-    where
-        ul1_0.country_id=?
-2024-04-12 21:52:36.015 DEBUG 4744 --- [io-8080-exec-10] org.hibernate.SQL                        : 
-    delete 
-    from
-        country 
-    where
-        id=?
-2024-04-12 21:52:36.016  INFO 4744 --- [io-8080-exec-10] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.deleteCountry
-2024-04-12 21:53:32.506  INFO 4744 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 21:53:32.508  INFO 4744 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-04-12 21:53:32.516  INFO 4744 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-04-12 21:53:35.598  INFO 16544 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 16544 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
-2024-04-12 21:53:35.599  INFO 16544 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
-2024-04-12 21:53:36.428  INFO 16544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-04-12 21:53:36.478  INFO 16544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
-2024-04-12 21:53:37.139  INFO 16544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-04-12 21:53:37.149  INFO 16544 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-04-12 21:53:37.149  INFO 16544 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2024-04-12 21:53:37.196  INFO 16544 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-04-12 21:53:37.197  INFO 16544 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1557 ms
-2024-04-12 21:53:37.374  INFO 16544 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-04-12 21:53:37.426  INFO 16544 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2024-04-12 21:53:37.452  INFO 16544 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-04-12 21:53:37.643  INFO 16544 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-04-12 21:53:37.663  INFO 16544 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-04-12 21:53:37.794  INFO 16544 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23321be7
-2024-04-12 21:53:37.795  INFO 16544 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-04-12 21:53:37.823  WARN 16544 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-04-12 21:53:38.902  INFO 16544 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-04-12 21:53:39.004  INFO 16544 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-04-12 21:53:39.604  INFO 16544 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-04-12 21:53:40.425  WARN 16544 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-04-12 21:53:41.391  INFO 16544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2024-04-12 21:53:41.405  INFO 16544 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 6.118 seconds (process running for 6.54)
-2024-04-12 21:53:49.444  INFO 16544 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-04-12 21:53:49.444  INFO 16544 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-04-12 21:53:49.445  INFO 16544 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-04-12 21:53:49.514 ERROR 16544 --- [nio-8080-exec-1] c.e.u.exceptions.ExceptionsHandler       : (400) Bad Request
-
-org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.example.univerproject.model.Country` from Array value (token `JsonToken.START_ARRAY`)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:184) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:159) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:134) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:228) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.4.jar:6.1.4]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.19.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.4.jar:6.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.19.jar:10.1.19]
-	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
-Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.example.univerproject.model.Country` from Array value (token `JsonToken.START_ARRAY`)
- at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]
-	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1752) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1526) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1473) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeFromArray(BeanDeserializer.java:656) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeOther(BeanDeserializer.java:211) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481) ~[jackson-databind-2.15.4.jar:2.15.4]
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.1.4.jar:6.1.4]
-	... 51 common frames omitted
-
-2024-04-12 21:53:58.574  INFO 16544 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Entering service method: CountryService.performBulkCountryOperation
-2024-04-12 21:53:58.597 DEBUG 16544 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:53:58.615 DEBUG 16544 --- [nio-8080-exec-4] org.hibernate.SQL                        : 
-    insert 
-    into
-        country
-        (area, name, population) 
-    values
-        (?, ?, ?)
-2024-04-12 21:53:58.616  INFO 16544 --- [nio-8080-exec-4] c.e.univerproject.aop.LoggerAspect       : Exiting service method: CountryService.performBulkCountryOperation
+2024-04-13 00:25:48.994 ERROR 15876 --- [nio-8080-exec-5] c.e.u.exceptions.ExceptionsHandler       : ERROR, 500 CODE
+2024-04-13 01:20:53.583  INFO 14304 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 14304 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
+2024-04-13 01:20:53.585  INFO 14304 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-04-13 01:20:54.231  INFO 14304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-13 01:20:54.266  INFO 14304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2024-04-13 01:20:54.761  INFO 14304 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-13 01:20:54.770  INFO 14304 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-13 01:20:54.770  INFO 14304 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-13 01:20:54.818  INFO 14304 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-13 01:20:54.818  INFO 14304 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
+2024-04-13 01:20:54.954  INFO 14304 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-13 01:20:55.020  INFO 14304 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-13 01:20:55.049  INFO 14304 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-13 01:20:55.228  INFO 14304 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-13 01:20:55.251  INFO 14304 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-13 01:20:55.502  INFO 14304 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10166230
+2024-04-13 01:20:55.503  INFO 14304 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-13 01:20:55.564  WARN 14304 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-13 01:20:56.389  INFO 14304 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-13 01:20:56.478  INFO 14304 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-13 01:20:56.818  INFO 14304 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-13 01:20:57.297  WARN 14304 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-13 01:20:57.897  INFO 14304 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-13 01:20:57.903  INFO 14304 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 4.633 seconds (process running for 5.767)
+2024-04-13 01:21:02.549  INFO 14304 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-13 01:21:02.550  INFO 14304 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-13 01:21:02.554  INFO 14304 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-13 01:31:27.537  INFO 4792 --- [           main] c.e.u.UniverProjectApplication           : Starting UniverProjectApplication using Java 21.0.2 with PID 4792 (C:\UniverProject\target\classes started by rerro in C:\UniverProject)
+2024-04-13 01:31:27.539  INFO 4792 --- [           main] c.e.u.UniverProjectApplication           : No active profile set, falling back to 1 default profile: "default"
+2024-04-13 01:31:28.112  INFO 4792 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-13 01:31:28.147  INFO 4792 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2024-04-13 01:31:28.617  INFO 4792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-13 01:31:28.624  INFO 4792 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-13 01:31:28.624  INFO 4792 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-13 01:31:28.669  INFO 4792 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-13 01:31:28.669  INFO 4792 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1104 ms
+2024-04-13 01:31:28.790  INFO 4792 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-13 01:31:28.822  INFO 4792 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-13 01:31:28.849  INFO 4792 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-13 01:31:28.995  INFO 4792 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-13 01:31:29.011  INFO 4792 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-13 01:31:29.135  INFO 4792 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21a9f95b
+2024-04-13 01:31:29.137  INFO 4792 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-13 01:31:29.161  WARN 4792 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-13 01:31:29.779  INFO 4792 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-13 01:31:29.842  INFO 4792 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-13 01:31:30.145  INFO 4792 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-13 01:31:30.566  WARN 4792 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-13 01:31:31.181  INFO 4792 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-13 01:31:31.187  INFO 4792 --- [           main] c.e.u.UniverProjectApplication           : Started UniverProjectApplication in 3.95 seconds (process running for 4.452)
+2024-04-13 01:31:32.895  INFO 4792 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-13 01:31:32.897  INFO 4792 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-13 01:31:32.899  INFO 4792 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
