@@ -52,7 +52,9 @@ public class Country {
   }
 
   /** Instantiates a new Country. */
-  public Country() {}
+  public Country() {
+    // No initialization nedeed for this consrtuctor
+  }
 
   /**
    * Gets id.

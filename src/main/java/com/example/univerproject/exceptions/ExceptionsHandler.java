@@ -17,7 +17,6 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 @RestControllerAdvice
 @Slf4j
 public class ExceptionsHandler {
-
   /**
    * Handle internal server error error response.
    *
@@ -27,9 +26,8 @@ public class ExceptionsHandler {
   @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
   @ExceptionHandler(RuntimeException.class)
   public ErrorResponse handleInternalServerError(RuntimeException ex) {
-    log.error("(500) Internal Server Error", ex);
-    return new ErrorResponse(
-        "500: Internal Server Error. Please try again later or contact support.");
+    log.error("ERROR, 500 CODE");
+    return new ErrorResponse(ex.getMessage());
   }
 
   /**
@@ -40,16 +38,15 @@ public class ExceptionsHandler {
    */
   @ResponseStatus(HttpStatus.BAD_REQUEST)
   @ExceptionHandler({
-    HttpClientErrorException.class,
-    HttpMessageNotReadableException.class,
-    MethodArgumentNotValidException.class,
-    MissingServletRequestParameterException.class,
-    ConstraintViolationException.class
+          HttpClientErrorException.class,
+          HttpMessageNotReadableException.class,
+          MethodArgumentNotValidException.class,
+          MissingServletRequestParameterException.class,
+          ConstraintViolationException.class
   })
   public ErrorResponse handleBadRequestException(Exception ex) {
-    log.error("(400) Bad Request", ex);
-    return new ErrorResponse(
-        "400: Bad Request. Please check your request parameters and try again.");
+    log.error("ERROR, 400 CODE");
+    return new ErrorResponse("400 ERROR, BAD REQUEST");
   }
 
   /**
@@ -60,22 +57,21 @@ public class ExceptionsHandler {
    */
   @ResponseStatus(HttpStatus.METHOD_NOT_ALLOWED)
   @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
-  public ErrorResponse handleMethodNotAllowed(HttpRequestMethodNotSupportedException ex) {
-    log.error("(405) Method Not Allowed", ex);
-    return new ErrorResponse(
-        "405: Method Not Allowed. Supported methods: " + ex.getSupportedHttpMethods());
+  public ErrorResponse handleMethodNotAllowed(Exception ex) {
+    log.error("ERROR, 405 CODE");
+    return new ErrorResponse("405 ERROR, METHOD NOT ALLOWED");
   }
 
   /**
-   * Handle not found exception error response.
+   * Handler found exception error response.
    *
    * @param ex the ex
    * @return the error response
    */
   @ResponseStatus(HttpStatus.NOT_FOUND)
   @ExceptionHandler(NoHandlerFoundException.class)
-  public ErrorResponse handleNotFoundException(NoHandlerFoundException ex) {
-    log.error("(404) Not Found", ex);
-    return new ErrorResponse("404: Resource Not Found. Please check the URL and try again.");
+  public ErrorResponse handlerFoundException(Exception ex) {
+    log.error("ERROR, 404 CODE");
+    return new ErrorResponse("404 ERROR, NOT FOUND");
   }
 }

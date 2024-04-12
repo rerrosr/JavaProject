@@ -119,4 +119,11 @@ public class UniversityController {
     List<University> universities = universityService.getUniversitiesByCountryName(countryName);
     return ResponseEntity.ok(universities);
   }
+
+  @PostMapping("/bulk")
+  public ResponseEntity<List<University>> performBulkOperations(@RequestBody List<University> universities) {
+    List<University> result = universityService.performBulkOperations(universities);
+
+    return ResponseEntity.ok(result);
+  }
 }

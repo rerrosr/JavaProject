@@ -88,4 +88,9 @@ public class CountryController {
     countryService.deleteCountry(id);
     return ResponseEntity.noContent().build();
   }
+  @PostMapping("/bulk")
+  public ResponseEntity<List<Country>> performBulkCountryOperation(@RequestBody List<Country> countries) {
+    List<Country> createdCountries = countryService.performBulkCountryOperation(countries);
+    return ResponseEntity.ok(createdCountries);
+  }
 }

@@ -87,4 +87,10 @@ public class CountryService {
     countryRepository.deleteById(id);
     cache.remove(id);
   }
+
+  public List<Country> performBulkCountryOperation(List<Country> countries) {
+    return countries.stream()
+            .map(this::createCountry)
+            .toList();
+  }
 }
