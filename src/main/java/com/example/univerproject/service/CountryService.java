@@ -87,7 +87,6 @@ public class CountryService {
     countryRepository.deleteById(id);
     cache.remove(id);
   }
-<<<<<<< Updated upstream
 
   public List<Country> performBulkCountryOperation(List<Country> countries) {
     return countries.stream()
@@ -95,6 +94,3 @@ public class CountryService {
             .toList();
   }
 }
-=======
-}
->>>>>>> Stashed changes

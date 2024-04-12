@@ -52,19 +52,9 @@ public class Country {
   }
 
   /** Instantiates a new Country. */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
   public Country() {
     // No initialization nedeed for this consrtuctor
   }
-=======
-  public Country() {}
->>>>>>> Stashed changes
-=======
-  public Country() {
-     // No initialization nedeed for this consrtuctor
-  }
->>>>>>> 09491cdcddb8d222ea6de0c311059ebef9ac79eb
 
   /**
    * Gets id.

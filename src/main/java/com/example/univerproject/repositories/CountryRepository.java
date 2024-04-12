@@ -8,10 +8,6 @@ import org.springframework.stereotype.Repository;
 /** The interface Country repository. */
 @Repository
 @Hidden
-<<<<<<< Updated upstream
 public interface CountryRepository extends JpaRepository<Country, Long> {
     boolean existsByName(String name);
 }
-=======
-public interface CountryRepository extends JpaRepository<Country, Long> {}
->>>>>>> Stashed changes

@@ -113,13 +113,10 @@ public class UniversityService {
   public List<University> getUniversitiesByCountryName(String countryName) {
     return universityRepository.findByCountryName(countryName);
   }
-<<<<<<< Updated upstream
 
   public List<University> performBulkOperations(List<University> universities) {
     return universities.stream()
             .map(university -> createUniversity(university.getName(), university.getCountry().getId()))
             .toList();
   }
-=======
->>>>>>> Stashed changes
 }
