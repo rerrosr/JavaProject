@@ -119,6 +119,7 @@ public class UniversityController {
     List<University> universities = universityService.getUniversitiesByCountryName(countryName);
     return ResponseEntity.ok(universities);
   }
+<<<<<<< Updated upstream
 
   @PostMapping("/bulk")
   public ResponseEntity<List<University>> performBulkOperations(@RequestBody List<University> universities) {
@@ -126,4 +127,6 @@ public class UniversityController {
 
     return ResponseEntity.ok(result);
   }
+=======
+>>>>>>> Stashed changes
 }

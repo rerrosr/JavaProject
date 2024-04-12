@@ -52,9 +52,13 @@ public class Country {
   }
 
   /** Instantiates a new Country. */
+<<<<<<< Updated upstream
   public Country() {
     // No initialization nedeed for this consrtuctor
   }
+=======
+  public Country() {}
+>>>>>>> Stashed changes
 
   /**
    * Gets id.
