@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Country</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .header a i {
+            margin-right: 5px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px 40px;
+            padding-left: 20px;
+            padding-right: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group input:invalid {
+            border-color: #ff6347;
+        }
+
+        .form-group input:valid {
+            border-color: #00ff00;
+        }
+
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #2F4F4F;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Add/Edit Country</h1>
+    <a href="https://github.com/rerrosr/JavaProject" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+</div>
+<div class="container">
+    <h2>Add country</h2>
+    <form th:object="${country}" th:action="@{/addCountry}" method="post">
+        <input type="hidden" th:field="*{id}">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required value="">
+        </div>
+        <div class="form-group">
+            <label for="population">Population:</label>
+            <input type="number" id="population" name="population" required value="">
+        </div>
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input type="number" step="0.01" id="area" name="area" required value="">
+        </div>
+        <div class="form-group" style="text-align: center;">
+            <button type="submit">Save Country</button>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <a href="http://localhost:8080/all">
+        <i class="fas fa-arrow-left"></i> Main page
+    </a>
+</div>
+</body>
+</html>

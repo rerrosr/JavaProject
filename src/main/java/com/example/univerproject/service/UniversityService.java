@@ -70,9 +70,7 @@ public class UniversityService {
   public University getUniversityById(Long id) {
     University university = cache.get(id);
     if (university == null) {
-      university =
-          universityRepository
-              .findById(id)
+      university = universityRepository.findById(id)
               .orElseThrow(() -> new RuntimeException("University not found"));
       if (university != null) {
         cache.put(id, university);
@@ -91,6 +89,7 @@ public class UniversityService {
   public University updateUniversity(Long id, University updatedUniversity) {
     University university = getUniversityById(id);
     university.setName(updatedUniversity.getName());
+    university.setCountry(updatedUniversity.getCountry());
     return universityRepository.save(university);
   }
 

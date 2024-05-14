@@ -58,7 +58,7 @@ class TestExceptionsHandler {
     @Test
     void testHandlerFoundException() {
         ExceptionsHandler handler = new ExceptionsHandler();
-        ErrorResponse response = handler.handlerFoundException(ex);
+        ErrorResponse response = handler.handleNotFoundException(ex);
         assertEquals("404 ERROR, NOT FOUND", response.getMessage());
     }
 }

@@ -1,31 +1,27 @@
 package com.example.univerproject.controller;
 
+import com.example.univerproject.model.University;
+import com.example.univerproject.service.UniversityService;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import com.example.univerproject.model.Country;
 import com.example.univerproject.service.CountryService;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 /** The type Country controller. */
-@RestController
-@RequestMapping("/api/v1/countries")
+@Controller
+//@RequestMapping("/api/v1/countries")
 public class CountryController {
   private final CountryService countryService;
+  private final UniversityService universityService;
 
-  /**
-   * Instantiates a new Country controller.
-   *
-   * @param countryService the country service
-   */
-  public CountryController(CountryService countryService) {
+  public CountryController(CountryService countryService, UniversityService universityService) {
     this.countryService = countryService;
+    this.universityService = universityService;
   }
 
   /**
@@ -33,10 +29,13 @@ public class CountryController {
    *
    * @return the all countries
    */
-  @GetMapping
-  public ResponseEntity<List<Country>> getAllCountries() {
+  @GetMapping("/all")
+  public String getAllCountries(Model model) {
     List<Country> countries = countryService.getAllCountries();
-    return ResponseEntity.ok(countries);
+    List<University> universities = universityService.getAllUniversities();
+    model.addAttribute("countries", countries);
+    model.addAttribute("universities", universities);
+    return "allInfo";
   }
 
   /**
@@ -46,9 +45,17 @@ public class CountryController {
    * @return the country by id
    */
   @GetMapping("/{id}")
-  public ResponseEntity<Country> getCountryById(@PathVariable Long id) {
-    Country country = countryService.getCountryById(id);
-    return ResponseEntity.ok(country);
+  public ResponseEntity<Country> getCountryById(@PathVariable String id) {
+    try {
+      Long countryId = Long.parseLong(id);
+      Country country = countryService.getCountryById(countryId);
+      if (country == null) {
+        return ResponseEntity.notFound().build();
+      }
+      return ResponseEntity.ok(country);
+    } catch (NumberFormatException e) {
+      return ResponseEntity.badRequest().build();
+    }
   }
 
   /**
@@ -57,40 +64,66 @@ public class CountryController {
    * @param country the country
    * @return the response entity
    */
-  @PostMapping
+
+  @PostMapping()
   public ResponseEntity<Country> createCountry(@RequestBody Country country) {
     Country createdCountry = countryService.createCountry(country);
     return ResponseEntity.ok(createdCountry);
   }
 
-  /**
-   * Update country response entity.
-   *
-   * @param id the id
-   * @param updatedCountry the updated country
-   * @return the response entity
-   */
-  @PutMapping("/{id}")
-  public ResponseEntity<Country> updateCountry(
-      @PathVariable Long id, @RequestBody Country updatedCountry) {
-    Country country = countryService.updateCountry(id, updatedCountry);
-    return ResponseEntity.ok(country);
-  }
 
   /**
-   * Delete country response entity.
+   * Create country response entity.
    *
-   * @param id the id
    * @return the response entity
    */
-  @DeleteMapping("/{id}")
-  public ResponseEntity<Void> deleteCountry(@PathVariable Long id) {
-    countryService.deleteCountry(id);
-    return ResponseEntity.noContent().build();
-  }
   @PostMapping("/bulk")
   public ResponseEntity<List<Country>> performBulkCountryOperation(@RequestBody List<Country> countries) {
     List<Country> createdCountries = countryService.performBulkCountryOperation(countries);
     return ResponseEntity.ok(createdCountries);
+  }
+
+  @GetMapping("/addCountry")
+  public String showAddCountryForm(Model model) {
+    model.addAttribute("country", new Country());
+    return "addCountry";
+  }
+
+  @PostMapping("/addCountry")
+  public String addCountry(@ModelAttribute("country") Country country) {
+    countryService.createCountry(country);
+    return "redirect:/all";
+  }
+  @GetMapping("/delete")
+  public String deleteAllCountries(Model model) {
+    List<Country> countries = countryService.getAllCountries();
+    model.addAttribute("countries", countries);
+    return "deleteCountry";
+  }
+  @PostMapping("/delete/{id}")
+  public String deleteCountry(@PathVariable Long id) {
+    countryService.deleteCountry(id);
+    return "redirect:/all";
+  }
+  @GetMapping("/edit/{id}")
+  public String showEditForm(@PathVariable("id") Long id, Model model) {
+    Country country = countryService.getCountryById(id);
+    if (country == null) {
+      return "error";
+    }
+    model.addAttribute("country", country);
+    return "updateCountry";
+  }
+
+  @PostMapping("/edit/{id}")
+  public String editCountry(@PathVariable("id") Long id, @ModelAttribute("updatedCountry") @Validated Country updatedCountry, BindingResult result) {
+    if (result.hasErrors()) {
+      return "updateCountry";
+    }
+    Country country = countryService.updateCountry(id, updatedCountry);
+    if (country == null) {
+      return "error";
+    }
+    return "redirect:/all";
   }
 }

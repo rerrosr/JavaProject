@@ -27,6 +27,7 @@ public class ExceptionsHandler {
   @ExceptionHandler(RuntimeException.class)
   public ErrorResponse handleInternalServerError(RuntimeException ex) {
     log.error("ERROR, 500 CODE");
+    ex.printStackTrace();
     return new ErrorResponse(ex.getMessage());
   }
 
@@ -70,8 +71,9 @@ public class ExceptionsHandler {
    */
   @ResponseStatus(HttpStatus.NOT_FOUND)
   @ExceptionHandler(NoHandlerFoundException.class)
-  public ErrorResponse handlerFoundException(Exception ex) {
+  public ErrorResponse handleNotFoundException(NoHandlerFoundException ex) {
     log.error("ERROR, 404 CODE");
+    ex.printStackTrace();
     return new ErrorResponse("404 ERROR, NOT FOUND");
   }
 }

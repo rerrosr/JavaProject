@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit University</title>
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+
+        .header a img {
+            width: 20px;
+            margin-right: 5px;
+            margin-left: -20px;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 160px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-top: -200px;
+        }
+
+        .container > * {
+            margin-bottom: 20px;
+        }
+
+        .form {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form input[type="submit"] {
+            display: inline-block;
+            width: 200px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #2F4F4F;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #778899;
+        }
+
+        .container a.btn {
+            display: inline-block;
+            width: 200px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #2F4F4F;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .container a.btn:hover {
+            background-color: #778899;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: -150px;
+        }
+
+        .footer a {
+            color: #2F4F4F;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Edit University</h1>
+    <a href="https://github.com/rerrosr/JavaProject" target="_blank">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg" alt="GitHub" />
+        GitHub
+    </a>
+</div>
+
+<div class="container">
+    <div class="form">
+        <h2>Edit University</h2>
+        <form method="post" th:action="@{/api/editUniversity/{id}(id=${university.id})}" th:object="${university}">
+            <label for="name">University Name:</label>
+            <input type="text" id="name" th:field="*{name}" required/><br/><br/>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required th:field="*{country}">
+                <option th:each="country : ${countries}" th:value="${country.id}" th:selected="${country.id == university.country.id}" th:text="${country.name}"></option>
+            </select><br/><br/>
+
+            <input type="submit" value="Update University"/>
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <a href="http://localhost:8080/all">
+        <i class="fas fa-arrow-left"></i> Main page
+    </a>
+</div>
+</body>
+</html>

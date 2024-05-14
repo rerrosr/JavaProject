@@ -36,11 +36,11 @@ class TestUniversityService {
     @Mock
     private MyCache<Long, University> cache;
 
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        universityService = new UniversityService(universityRepository, restTemplate, countryService);
-    }
+//    @BeforeEach
+//    void setUp() {
+//        MockitoAnnotations.openMocks(this);
+//        universityService = new UniversityService(universityRepository, restTemplate, countryService);
+//    }
 
     @Test
     void testGetUniversity() {

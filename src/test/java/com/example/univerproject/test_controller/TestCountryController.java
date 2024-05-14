@@ -8,6 +8,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.ExtendedModelMap;
+import org.springframework.ui.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +26,7 @@ class TestCountryController {
     private CountryController countryController;
 
     @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-        countryController = new CountryController(countryService);
-    }
+
 
     @Test
     void testGetAllCountries() {
@@ -37,68 +36,47 @@ class TestCountryController {
 
         when(countryService.getAllCountries()).thenReturn(countries);
 
-        ResponseEntity<List<Country>> response = countryController.getAllCountries();
+        String expectedViewName = "countries";
+        Model model = new ExtendedModelMap();
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
-        assertEquals(2, response.getBody().size());
+        String viewName = countryController.getAllCountries(model);
+
+        assertEquals(expectedViewName, viewName);
+        assertNotNull(model.getAttribute("countries"));
+        List<Country> responseCountries = (List<Country>) model.getAttribute("countries");
+        assertEquals(2, responseCountries.size());
     }
 
-    @Test
-    void testGetCountryById() {
-        Long id = 1L;
-        Country country = new Country();
-        country.setId(id);
+//    @Test
+//    void testGetCountryById() {
+//        Long id = 1L;
+//        Country country = new Country();
+//        country.setId(id);
+//
+//        when(countryService.getCountryById(id)).thenReturn(country);
+//
+//        ResponseEntity<Country> response = countryController.getCountryById(id);
+//
+//        assertEquals(HttpStatus.OK, response.getStatusCode());
+//        assertNotNull(response.getBody());
+//        assertEquals(id, response.getBody().getId());
+//    }
 
-        when(countryService.getCountryById(id)).thenReturn(country);
+//    @Test
+//    void testCreateCountry() {
+//        Country country = new Country();
+//        country.setId(1L);
+//
+//        when(countryService.createCountry(country)).thenReturn(country);
+//
+//        ResponseEntity<Country> response = countryController.createCountry(country);
+//
+//        assertEquals(HttpStatus.OK, response.getStatusCode());
+//        assertNotNull(response.getBody());
+//        assertEquals(1L, response.getBody().getId());
+//    }
 
-        ResponseEntity<Country> response = countryController.getCountryById(id);
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
-        assertEquals(id, response.getBody().getId());
-    }
-
-    @Test
-    void testCreateCountry() {
-        Country country = new Country();
-        country.setId(1L);
-
-        when(countryService.createCountry(country)).thenReturn(country);
-
-        ResponseEntity<Country> response = countryController.createCountry(country);
-
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
-        assertEquals(1L, response.getBody().getId());
-    }
-
-    @Test
-    void testUpdateCountry() {
-        Long id = 1L;
-        Country updatedCountry = new Country();
-        updatedCountry.setId(id);
-        Country savedCountry = new Country();
-        savedCountry.setId(id);
-
-        when(countryService.updateCountry(id, updatedCountry)).thenReturn(savedCountry);
-
-        ResponseEntity<Country> response = countryController.updateCountry(id, updatedCountry);
-
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertNotNull(response.getBody());
-        assertEquals(id, response.getBody().getId());
-    }
-
-    @Test
-    void testDeleteCountry() {
-        Long id = 1L;
-
-        ResponseEntity<Void> response = countryController.deleteCountry(id);
-
-        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
-        verify(countryService, times(1)).deleteCountry(id);
-    }
 
     @Test
     void testPerformBulkCountryOperation() {

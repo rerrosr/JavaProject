@@ -1,34 +1,34 @@
 package com.example.univerproject.controller;
 
+import com.example.univerproject.model.Country;
 import com.example.univerproject.model.University;
+import com.example.univerproject.service.CountryService;
 import com.example.univerproject.service.UniversityService;
 import com.fasterxml.jackson.databind.JsonNode;
 import java.util.List;
 import java.util.Map;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 /** The type University controller. */
-@RestController
-@RequestMapping("/api/v1/university")
+@Controller
+@RequestMapping("/api")
 public class UniversityController {
   private final UniversityService universityService;
+  private final CountryService countryService;
 
   /**
    * Instantiates a new University controller.
    *
    * @param universityService the university service
    */
-  public UniversityController(UniversityService universityService) {
+  public UniversityController(UniversityService universityService, CountryService countryService) {
     this.universityService = universityService;
+    this.countryService = countryService;
   }
 
   /**
@@ -66,45 +66,20 @@ public class UniversityController {
     return ResponseEntity.ok(university);
   }
 
-  /**
-   * Create university response entity.
-   *
-   * @param requestBody the request body
-   * @return the response entity
-   */
-  @PostMapping
-  public ResponseEntity<University> createUniversity(@RequestBody Map<String, Object> requestBody) {
-    String universityName = (String) requestBody.get("name");
-    Long countryId = Long.parseLong(requestBody.get("countryId").toString());
-
-    University createdUniversity = universityService.createUniversity(universityName, countryId);
-    return ResponseEntity.ok(createdUniversity);
+  @GetMapping("/addUniversity")
+  public String showAddUniversityForm(Model model) {
+    List<Country> countries = countryService.getAllCountries();
+    model.addAttribute("countries", countries);
+    model.addAttribute("university", new University());
+    return "addUniversity";
   }
 
-  /**
-   * Update university response entity.
-   *
-   * @param id the id
-   * @param updatedUniversity the updated university
-   * @return the response entity
-   */
-  @PutMapping("/{id}")
-  public ResponseEntity<University> updateUniversity(
-      @PathVariable Long id, @RequestBody University updatedUniversity) {
-    University university = universityService.updateUniversity(id, updatedUniversity);
-    return ResponseEntity.ok(university);
-  }
-
-  /**
-   * Delete university response entity.
-   *
-   * @param id the id
-   * @return the response entity
-   */
-  @DeleteMapping("/{id}")
-  public ResponseEntity<Void> deleteUniversity(@PathVariable Long id) {
-    universityService.deleteUniversity(id);
-    return ResponseEntity.noContent().build();
+  @PostMapping("/addUniversity")
+  public String addUniversity(@ModelAttribute University university) {
+    String universityName = university.getName();
+    Long countryId = university.getCountry().getId();
+    universityService.createUniversity(universityName, countryId);
+    return "redirect:/all";
   }
 
   /**
@@ -125,5 +100,32 @@ public class UniversityController {
     List<University> result = universityService.performBulkOperations(universities);
 
     return ResponseEntity.ok(result);
+  }
+
+  @GetMapping("/deleteUniversity")
+  public String showDeleteUniversityForm(Model model) {
+    List<University> university = universityService.getAllUniversities();
+    model.addAttribute("university", university);
+    return "deleteUniversity";
+  }
+  @PostMapping("/deleteUniversity/{id}")
+  public String deleteCountry(@PathVariable("id") Long id) {
+    universityService.deleteUniversity(id);
+    return "redirect:/all";
+  }
+
+  @GetMapping("/editUniversity/{id}")
+  public String showEditUniversityForm(@PathVariable("id") Long id, Model model) {
+    University university = universityService.getUniversityById(id);
+    List<Country> country = countryService.getAllCountries();
+    model.addAttribute("university", university);
+    model.addAttribute("countries", country);
+    return "editUniversity";
+  }
+
+  @PostMapping("/editUniversity/{id}")
+  public String editUniversity(@PathVariable("id") Long id, @ModelAttribute("university") University updatedUniversity) {
+    universityService.updateUniversity(id, updatedUniversity);
+    return "redirect:/all";
   }
 }

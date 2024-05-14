@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .header a i {
+            margin-right: 5px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input:invalid {
+            border-color: #ff6347;
+        }
+
+        input:valid {
+            border-color: #00ff00;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        button[type="submit"] {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #2F4F4F;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Add University</h1>
+    <a href="https://github.com/rerrosr/JavaProject" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>
+</div>
+<div class="container">
+    <form action="/api/addUniversity" method="post" th:object="${university}">
+        <label for="name">University Name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}" required>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country.id" th:field="*{country.id}" required>
+            <option th:each="country : ${countries}" th:value="${country.id}" th:text="${country.name}"></option>
+        </select>
+
+        <div class="center">
+            <button type="submit">Save university</button>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <a href="http://localhost:8080/all">
+        <i class="fas fa-arrow-left"></i> Main page
+    </a>
+</div>
+</body>
+</html>

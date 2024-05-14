@@ -1,5 +1,6 @@
 package com.example.univerproject.aop;
 
+import com.example.univerproject.service.CounterService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -27,8 +28,10 @@ public class LoggerAspect {
     log.info("Entering service method: {}.{}", className, methodName);
 
     try {
+      CounterService.incrementRequestCount();
       Object result = joinPoint.proceed();
       log.info("Exiting service method: {}.{}", className, methodName);
+      log.info("количество {}", CounterService.getRequestCount());
       return result;
     } catch (Exception e) {
       log.error("Exception in service method: {}.{}", className, methodName, e);

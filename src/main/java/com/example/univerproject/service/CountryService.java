@@ -40,18 +40,22 @@ public class CountryService {
    * @return the country by id
    */
   public Country getCountryById(Long id) {
-    Country country = cache.get(id);
-    if (country == null) {
-      country =
-          countryRepository
-              .findById(id)
-              .orElseThrow(() -> new RuntimeException("Country not found"));
-      if (country != null) {
-        cache.put(id, country);
-      }
-    }
-    return country;
+    return countryRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Country not found"));
   }
+//  public Country getCountryById(Long id) {
+//    Country country = cache.get(id);
+//    if (country == null) {
+//      country =
+//              countryRepository
+//                      .findById(id)
+//                      .orElseThrow(() -> new RuntimeException("Country not found"));
+//      if (country != null) {
+//        cache.put(id, country);
+//      }
+//    }
+//    return country;
+//  }
 
   /**
    * Create country country.
@@ -88,9 +92,14 @@ public class CountryService {
     cache.remove(id);
   }
 
+  /**
+   * Create bulk country.
+   *
+   * @return list of country
+   */
   public List<Country> performBulkCountryOperation(List<Country> countries) {
     return countries.stream()
-            .map(this::createCountry)
+            .map(country -> (countryRepository.save(country)))
             .toList();
   }
 }
