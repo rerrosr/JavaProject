@@ -1,0 +1,30 @@
+volumes:
+  pg_university:
+
+services:
+  backend:
+    container_name: laba
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - university_db
+    environment:
+      SPRING_DATASOURCE_URL: 'jdbc:postgresql://university_db:5432/mydb'
+
+
+  university_db:
+    image: postgres
+    container_name: university_db_java
+    restart: always
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=123
+    volumes:
+      - pg_university:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
